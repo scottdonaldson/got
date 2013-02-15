@@ -1,0 +1,521 @@
+@media screen and (max-width: 960px) {
+	.excerpt,
+	.content {
+		font-size: 14.5px;
+	}
+
+	.home article .entry-content {
+		min-height: 245px;
+	}
+
+	.single .entry-date {
+		font-size: 70%;
+	}
+
+	.single .entry-content {
+		font-size: 16px;
+	}
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+
+	.home .download .icon-triangle-3 {
+		margin-right: -4px;
+	}
+
+	.twitter .tweet {
+		background-image: none;
+		font-size: 12px;
+		padding: 8px;
+		width: 63%;
+	}
+
+}
+
+@media screen and (max-width: 860px) {
+
+.excerpt,
+.content {
+	font-size: 13px;
+}
+
+.home article .entry-content {
+	min-height: 235px;
+}
+
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 760px) {
+
+#logo {
+	height: 200px;
+	margin: 10px 2% 10px 0;
+	width: auto;
+}
+
+#blog-title {
+	font-size: 60px;
+	margin: 50px 0 5px;
+}
+
+#tagline {
+	font-size: 22px;
+}
+
+nav {
+	clear: both;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.home article {
+	margin: 0 0 6% 0;
+	width: 100%;
+}
+
+.home article:first-child .img {
+	width: 100%;
+}
+
+.home article:first-child .img img,
+.home article .img img {
+	float: left;
+	width: 48%;
+}
+
+.home article:first-child .podcast,
+.home article .podcast {
+	clear: left;
+    float: left;
+    margin: 8px 0 0;
+    position: relative;
+    width: 48%;
+}
+
+.home article:first-child .podcast a,
+.home article .podcast a,
+.home article:first-child div.share,
+.home article div.share {
+	font-size: 16px;
+	height: 36px;
+}
+
+.home article:first-child .wpaudio-slide,
+.home article .wpaudio-slide {
+    left: 0;
+    top: -60px;
+    width: 100%;
+}
+
+.play, .pause {
+	margin-right: 2%;
+	width: 28%;
+}
+
+.home article:first-child .play span {
+	top: 4px;
+}
+
+.home .download .icon-triangle-3 {
+	margin-right: 0;
+}
+
+.download {
+	margin-right: 2%;
+	width: 39%;
+}
+
+.home article:first-child .entry-title,
+.home article .entry-title {
+	font-size: 26px;
+}
+
+.excerpt {
+	font-size: 18px;
+}
+
+.read-on {
+	display: inline !important;
+}
+
+.home article:first-child .entry-content,
+.home article .entry-content {
+	padding: 0 4% 0 0;
+	position: absolute;
+	right: 1.5%;
+	top: 0;
+	width: 48%;
+}
+
+.home article:first-child .excerpt.short,
+.home article .excerpt.short {
+	display: block !important;
+}
+
+.home article:first-child .excerpt.long,
+.home article .excerpt.long {
+	display: none !important;
+}
+
+.home article .read-more {
+	display: none;
+}
+
+.single .play {
+	width: 15%;
+}
+
+.single .wpaudio-container {
+	width: 85%;
+}
+
+.single .wpaudio-bar {
+	width: 70%;
+}
+
+.single .wpaudio-meta {
+	width: 24%;
+}
+
+.single .entry-title {
+	font-size: 48px;
+}
+
+.page-template-pg-about-php article {
+	font-size: 24px;
+}
+
+.host {
+	margin: 0 8% 15px 0;
+	width: 46%;
+}
+
+.host.mike {
+	margin-right: 0;
+}
+
+.donate, .thanks, .subscribe {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.donate a {
+	bottom: 0;
+	margin: 0 auto;
+	max-width: 250px;
+	position: relative;
+}
+
+.subscribe form {
+	text-align: center;
+}
+
+.subscribe .email {
+	max-width: 250px;
+}
+
+.subscribe input[type="submit"] {
+	float: none;
+	position: relative;
+	top: 2px;
+}
+
+.widget {
+	height: auto;
+}
+
+.widget h3 ~ p {
+	height: auto;
+	margin-bottom: 12px;
+}
+
+.twitter img {
+	display: none;
+}
+
+.twitter a.icon-twitter {
+	color: #d32a2a;
+	float: none;
+	font-size: 16px;
+	text-align: left;
+	text-indent: 3%;
+}
+
+.twitter a.icon-twitter:active,
+.twitter a.icon-twitter:hover {
+	color: #d32a2a;
+	text-decoration: underline;
+}
+
+.twitter a.icon-twitter:before {
+	content: '';
+}
+
+.twitter a.icon-twitter span {
+	color: #d32a2a;
+	display: block;
+}
+
+.twitter .flex-direction-nav a {
+	font-size: 30px;
+}
+
+.twitter .flex-direction-nav span {
+	margin-top: 42px;
+}
+
+.twitter .flex-prev,
+.twitter .flex-next {
+	top: 5px;
+}
+
+.twitter .tweet {
+	height: auto;
+	margin: 10px 3% 0;
+	position: relative;
+	width: 80%;
+}
+
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+
+#logo {
+	height: 180px;
+}
+
+#blog-title {
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+#tagline {
+	font-size: 16px;
+	margin: 0 0 0 45%;
+}
+
+.excerpt {
+	font-size: 13px;
+}
+
+.single .wpaudio-bar {
+	width: 66%;
+}
+
+.single .wpaudio-meta {
+	font-size: 14px;
+	margin-top: 14px;
+	width: 28%;
+}
+
+.single .entry-title {
+	font-size: 40px;
+}
+
+.private form {
+	margin: 20px 0 35px;
+}
+
+.private #password {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.private #submitted {
+	float: right;
+	width: 35%;
+}
+
+.private p.alignleft {
+	margin-right: 0;
+	width: 100%;
+}
+
+.private a.donate {
+	width: 100%;
+}
+
+.twitter .flex-next {
+	right: 10px;
+}
+
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 479px) {
+
+header, #main, #footer-content, .row {
+	padding: 0 10px;
+}
+
+#logo {
+	height: 100px;
+	margin: 10px 2% 10px 0;
+}
+
+#blog-title {
+	font-size: 32px;
+	margin-top: 20px;
+}
+
+nav li {
+	font-size: 20px;
+	height: 30px;
+	margin: 0 1% 1% 0;
+}
+
+nav li a {
+	line-height: 30px;
+}
+
+nav li:nth-child(1) { 		/* Home */
+	width: 13%; }
+nav li:nth-child(2) {		/* About */
+	width: 30%; }
+nav li:nth-child(3) {		/* News */
+	width: 20%; }
+nav li:nth-child(4) {		/* Preview */
+	margin-right: 0;
+	width: 34%; }
+nav li:nth-child(5) {		/* Facebook */
+	width: 13%; }
+nav li:nth-child(6) {		/* Twitter */
+	margin-right: 1%;
+	width: 13%; }
+nav li:nth-child(7) {		/* Subscribe */
+	margin-right: 0;
+	width: 72%; }
+nav li:nth-child(8) {		/* Search */
+	padding: 4px;
+	width: 100%; }
+
+#s {
+	height: 22px;
+	width: 100%;
+}
+
+#submit {
+	display: none;
+}
+
+.home article:first-child .img img,
+.home article .img img {
+	width: 100%;
+}
+
+.home article:first-child .podcast, 
+.home article .podcast {
+	width: 100%;
+}
+
+.home article:first-child .entry-content, 
+.home article .entry-content {
+	min-height: 0;
+	padding: 0 6%;
+	position: relative;
+	right: 0;
+	width: 100%;
+}
+
+.single .entry-title {
+	font-size: 30px;
+}
+
+.single .play {
+	width: 18%;
+}
+
+.single .wpaudio-container {
+	width: 82%;
+}
+
+.single .wpaudio-bar {
+	width: 62%;
+}
+
+.single .wpaudio-meta {
+	width: 32%;
+}
+
+.single .graphic {
+	margin-bottom: 15px;
+	margin-right: 0;
+	width: 100%;
+}
+
+.single .entry-content {
+	width: 100%;
+}
+
+.page-template-pg-about-php .featured img {
+	margin-bottom: 15px;
+}
+
+.page-template-pg-about-php article {
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+}
+
+.host {
+	margin-right: 0;
+	width: 100%;
+}
+
+.host:last-child {
+	margin-bottom: 0;
+}
+
+.host img {
+	display: block;
+	margin: 0 auto;
+}
+
+.page-template-pg-news-php article:last-child, 
+.search article:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.donate a,
+.subscribe .email {
+	max-width: 100%;
+}
+
+.subscribe input[type="submit"] {
+	text-align: right;
+	top: 0;
+	width: 100%;
+}
+
+.twitter .flex-next {
+	right: 18px;
+}
+
+#footer-bottom p.alignleft,
+#footer-bottom p.alignright {
+	float: none;
+	margin: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+}
+
+/* --------- TOUCH ONLY ---------- */
+
+.touch #s {
+	width: 100%;
+}
+
+.touch #submit {
+	display: none;
+}
+
+.touch #footer-bottom a {
+	text-decoration: underline;
+}
