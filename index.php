@@ -5,17 +5,17 @@
     // Are we on the home page or a paged page?
     // First, home.
     if (!is_paged()) {
-        query_posts(array(
+        $query = new WP_Query(array(
                 'category_name' => 'episode',
                 'posts_per_page' => 5,
                 'paged' => get_query_var('page')
             )
         );    
-        while ( have_posts() ) : 
+        while ( $query->have_posts() ) : 
 
         // Increment to help with counting posts
         $counter;
-        the_post();
+        $query->the_post();
         $counter++;
 
         // Check to see if we're on the first post
@@ -81,19 +81,19 @@
         </article><!-- .post -->
 
     <?php } else { };
-    endwhile; wp_reset_query();
+    endwhile; wp_reset_postdata();
 
     // Then we must be on a paged page
     } else { 
         
-        query_posts(array(
+        $paged_query = new WP_Query(array(
                 'category_name' => 'episode',
                 'posts_per_page' => 3,
                 'offset' => -2+3*$paged,
                 'paged' => get_query_var('page')
             )
         );
-        while ( have_posts() ) : the_post(); ?>
+        while ( $paged_query->have_posts() ) : $paged_query->the_post(); ?>
 
                 <article <?php post_class('clearfix'); ?>>
 

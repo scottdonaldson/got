@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <div id="content">
-    <?php query_posts(array(
+    <?php $query = new WP_Query(array(
             'posts_per_page' => 3,
             'offset' => 2,
             'paged' => get_query_var('page')
         )
-    ); while (have_posts()) : the_post(); 
+    ); while ($query->have_posts()) : $query->the_post(); 
     if( $post->ID == $do_not_duplicate ) continue; ?>
 
     <article <?php post_class('clearfix'); ?>>
@@ -46,7 +46,7 @@
     <div class="read-more atrament">More</div>  
     </article><!-- .post -->
 
-    <?php endwhile; wp_reset_query(); ?>
+    <?php endwhile; wp_reset_postdata(); ?>
 
 </div><!-- #content -->
 
