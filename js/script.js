@@ -12,25 +12,27 @@ jQuery(document).ready(function($){
 	search.removeClass('hidden');
 
 	// Open/close read more on home page	
-	function openClose (){
+	function openClose() {
 		$this = $(this);
+		
 		var entry = $(this).prev('.entry-content');
 		entry.find('.content').toggle();
 		entry.find('.excerpt.short').toggle();
+		
 		var text = $this.text() == 'More' ? 'Less' : 'More';
 		$this.text(text);
 	}
-	$('.read-more').on('click',openClose);
+	$('.read-more').click(openClose);
 
 	// Share
-	function shareOn(){
-		$(this).find('#share').fadeIn().css('right',.5*$(this).width()-50);
+	function shareOn() {
+		$(this).find('#share').fadeIn().css('right', 0.5 * $(this).width() - 50);
 	}	
-	function shareOff(){
+	function shareOff() {
 		$(this).find('#share').fadeOut();
 	}
-	$('.no-touch .share').on('mouseover',shareOn).on('mouseleave',shareOff);
-	$('.touch .share').on('click',shareOn);
+	$('.no-touch .share').mouseover(shareOn).mouseleave(shareOff);
+	$('.touch .share').click(shareOn);
 
 	// Show player when hover over play button
 	function showPlayer(){
@@ -143,8 +145,8 @@ jQuery(document).ready(function($){
 	});
 
 	// Normalize heights on the About page
-	var hosts = ['jonah','mike','steven','brad'];
-	var hostHeights = function(){
+	var hosts = ['jonah', 'mike', 'steven', 'brad'];
+	function hostHeights(){
 		for (var i = 0; i < hosts.length; i++) {
 			var host = $('section.' + hosts[i] + ' p'),
 				prevHost = $('section.' + hosts[i - 1] + ' p');
@@ -158,8 +160,7 @@ jQuery(document).ready(function($){
 			}
 		}
 	}
-	hostHeights();
-	$(window).resize(hostHeights);
+	$(window).on('load resize', hostHeights);
 
 	// Get Twitter statuses
 	twitterFetcher('366934472437927936', 'tweet-jonah', 1, true, false, false);
