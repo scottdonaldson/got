@@ -143,11 +143,14 @@ jQuery(document).ready(function($){
 	});
 
 	// Normalize heights on the About page
-	var hosts = new Array('jonah','mike','steven','brad');
+	var hosts = ['jonah','mike','steven','brad'];
 	var hostHeights = function(){
-		for (var i=1; i<4; i++) {
-			var host = $('section.'+hosts[i]+' p');
-			var prevHost = $('section.'+hosts[i-1]+' p');
+		for (var i = 0; i < hosts.length; i++) {
+			var host = $('section.' + hosts[i] + ' p'),
+				prevHost = $('section.' + hosts[i - 1] + ' p');
+			// Reset host heights
+			host.css('height', 'auto');
+			// Then dynamically set if one is taller than the others
 			if ( host.height() < prevHost.height() ) {
 				host.height(prevHost.height());
 			} else {
@@ -156,30 +159,12 @@ jQuery(document).ready(function($){
 		}
 	}
 	hostHeights();
-	$(window).on('resize',hostHeights);
+	$(window).resize(hostHeights);
 
 	// Get Twitter statuses
-	$(".jonah .tweet").tweet({
-        join_text: "auto",
-        username: "mynameisjonah",
-        count: 1,
-        loading_text: "Loading...",
-        template: "{text}"
-    });
-	$('.steven .tweet').tweet({
-		join_text: "auto",
-        username: "stevensmithsays",
-        count: 1,
-        loading_text: "Loading...",
-        template: "{text}"
-	});
-	$('.brad .tweet').tweet({
-		join_text: "auto",
-        username: "soundwag",
-        count: 1,
-        loading_text: "Loading...",
-        template: "{text}"
-	});
+	twitterFetcher('366934472437927936', 'tweet-jonah', 1, true, false, false);
+	twitterFetcher('366935562965377024', 'tweet-steven', 1, true, false, false);
+	twitterFetcher('366935629218594817', 'tweet-brad', 1, true, false, false);
 
 	// Slider for Twitter statuses
 	$('.twitter').flexslider({

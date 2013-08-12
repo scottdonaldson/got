@@ -44,17 +44,17 @@
 				<li class="jonah">
 					<img src="<?php echo bloginfo('template_url'); ?>/images/jonah_web.jpg" />
 					<a class="atrament icon-twitter" href="http://www.twitter.com/mynameisjonah" target="_blank"><span>@mynameisjonah</span></a>
-					<div class="tweet"></div>
+					<div class="tweet" id="tweet-jonah"></div>
 				</li>
 				<li class="steven">
 					<img src="<?php echo bloginfo('template_url'); ?>/images/steven_web.jpg" />
 					<a class="atrament icon-twitter" href="http://www.twitter.com/stevensmithsays" target="_blank"><span>@stevensmithsays</span></a>
-					<div class="tweet"></div>
+					<div class="tweet" id="tweet-steven"></div>
 				</li>
 				<li class="brad">
 					<img src="<?php echo bloginfo('template_url'); ?>/images/brad_web.jpg" />
 					<a class="atrament icon-twitter" href="http://www.twitter.com/soundwag" target="_blank"><span>@soundwag</span></a>
-					<div class="tweet"></div>
+					<div class="tweet" id="tweet-brad"></div>
 				</li>
 			</ul>
 		</div>
