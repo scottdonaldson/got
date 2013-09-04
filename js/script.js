@@ -163,9 +163,9 @@ jQuery(document).ready(function($){
 	$(window).on('load resize', hostHeights);
 
 	// Get Twitter statuses
-	twitterFetcher('366934472437927936', 'tweet-jonah', 1, true, false, false);
-	twitterFetcher('366935562965377024', 'tweet-steven', 1, true, false, false);
-	twitterFetcher('366935629218594817', 'tweet-brad', 1, true, false, false);
+	twitterFetcher.fetch('366934472437927936', 'tweet-jonah', 1, true, false, false);
+	twitterFetcher.fetch('366935562965377024', 'tweet-steven', 1, true, false, false);
+	twitterFetcher.fetch('366935629218594817', 'tweet-brad', 1, true, false, false);
 
 	// Slider for Twitter statuses
 	$('.twitter').flexslider({
@@ -173,6 +173,19 @@ jQuery(document).ready(function($){
 		controlNav: false,
 		directionNav: true,
 		prevText: '<span class="icon-triangle-2"></span>',
-		nextText: '<span class="icon-triangle"></span>'
+		nextText: '<span class="icon-triangle"></span>',
+		after: function(){
+			$('.clone').each(function(){
+				$this = $(this);
+				var classes = $this.attr('class').split(' ');
+				for (var i = 0; i < classes.length; i++) {
+					if (classes[i] !== 'clone' && $this.find('.tweet').text() !== 'Loading...') {
+						$('.'+classes[i]).find('.tweet').html($this.find('.tweet').html());
+					}
+					break;html
+				}
+			});
+		}
 	});
+
 });

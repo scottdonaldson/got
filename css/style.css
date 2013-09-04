@@ -1433,6 +1433,14 @@ footer {
 	text-decoration: underline;
 }
 
+.twitter .tweet p {
+	margin: 0;
+}
+
+.twitter .interact {
+	display: none;
+}
+
 #footer-bottom {
 	background: #D32A2A;
 	color: #fff;
