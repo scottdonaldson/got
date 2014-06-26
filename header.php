@@ -9,6 +9,8 @@
 	<title><?php wp_title(''); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 
+	<meta name="google-site-verification" content="Bufd-89uTzU4jDkwiGUNIebSwaRPLLy2j-ULo38W2W4" />
+
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
 	<link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/style.css">
